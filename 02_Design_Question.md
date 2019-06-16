@@ -39,13 +39,13 @@
         
         
 # solution 
- - use Mongo DB
- 	- [http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf](http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf)
- - use Kubernetes Engine to minimize downtime.
- - use Apache lucene 
-     - between lucene and ElasticSearch will be final round for query performance and I am going to choose lucene because of below reason
-     - Elasticsearch is built over Lucene and provides a JSON based REST API to refer to Lucene features.
-     - ayment information is more likely to structred database.
- - use GraphQL instead of REST API
- - use D3.js for customer visualization.
+ + use Mongo DB 
+	- [http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf](http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf)
+
+ + use GraphQL instead of REST API to maximize read speed for analytics
+ + use Kubernetes Engine to minimize downtime.
+ + use Apache lucene (instead of Elastic Search)
+    - payment information is more likely to structured database. 
+    -  Elasticsearch is built over Lucene and provides a JSON based REST API to refer to Lucene features.
+ + use D3.js for customer visualization when it come to build front side.
  

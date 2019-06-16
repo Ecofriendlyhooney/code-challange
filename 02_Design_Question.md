@@ -33,7 +33,9 @@
         - assume 50% of daily write events taken place during the 1 hour lunch time = 0.5 billion 
         - 500,000,000 write events divide 3600 seconds (1 hour)= 138,888.888889 (events per second)
         - assume that system needs 138,889 event handler per second at least. 
-        - according to research, "Visa does around 1,700 transactions per second on average (based on a calculation derived from the official claim of over 150 million transactions per day)" so new system needs much faster performance than VISA.
+        - according to research, "Visa does around 1,700 transactions per second on average 
+           - "based on a calculation derived from the official claim of over 150 million transactions per day" 
+           - so new system needs much faster performance than VISA.
         
       + paypay handles structured database as it is payment information.
         

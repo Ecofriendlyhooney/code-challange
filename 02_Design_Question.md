@@ -22,20 +22,20 @@
   
 # Base Assumtion
 
-     - 1 billion write events, (86400 seconds a day, 1440 minutes a day, 24 hours a day).
-     - assume paypay payments time series matrix volume explicit 
+     + 1 billion write events, (86400 seconds a day, 1440 minutes a day, 24 hours a day).
+     + assume paypay payments time series matrix volume explicit 
         - 20% one hour in the morning time (weekdays base)
         - 50% during one hour in the lunch time (weekdays base)
         - 30% during the day (except morning and lunch time) (weekdays base)
         - do not calculate weekends as weekend's volume expected lower than weekdaya's peak.
         
-     - the peak time will be lunch time (50% portion) so 
-        - 1 billion write events devide 24 hour = 41,666,666.6667 (events per hour)
-        - 41,666,666.6667 write events devide 3600 seconds (1 hour)= 11,574.074074 (events per second)
-        - assume that system needs 11,574 event handler per second at least. 
-        - according to research, "Visa does around 1,700 transactions per second on average (based on a calculation derived from the official claim of over 150 million transactions per day)" so new system needs much faster performance than VISA's.
+     + the peak time will be lunch time (50% portion) so 
+        - assume 50% of daily write events taken place during the 1 hour lunch time = 0.5 billion 
+        - 500,000,000 write events divide 3600 seconds (1 hour)= 138,888.888889 (events per second)
+        - assume that system needs 138,889 event handler per second at least. 
+        - according to research, "Visa does around 1,700 transactions per second on average (based on a calculation derived from the official claim of over 150 million transactions per day)" so new system needs much faster performance than VISA.
         
-      - paypay handles structured database which is payment information.
+      + paypay handles structured database as it is payment information.
         
         
 # solution 

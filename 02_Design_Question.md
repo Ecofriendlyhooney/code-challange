@@ -43,7 +43,6 @@
 # solution 
  + use Mongo DB 
 	- [http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf](http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf)
-
  + use GraphQL instead of REST API to maximize read speed for analytics
  + use Kubernetes Engine to minimize downtime.
  + use Apache lucene (instead of Elastic Search)

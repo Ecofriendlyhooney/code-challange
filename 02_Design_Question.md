@@ -44,7 +44,8 @@
  + use Mongo DB 
 	- [http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf](http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf)
  + use GraphQL instead of REST API to maximize read speed for analytics
- + use Kubernetes Engine to minimize downtime.
+ + use GCP Spanner 
+ 	- Guaranteed max of 5 minutes of downtime (including planned downtime) on paper and in practice..
  + use Apache lucene (instead of Elastic Search)
     - payment information is more likely to structured database. 
     -  Elasticsearch is built over Lucene and provides a JSON based REST API to refer to Lucene features.

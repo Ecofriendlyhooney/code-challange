@@ -4,11 +4,11 @@
 - free to choose any open source tools
 
 ## The system needs to:
- - [ ] handle large write volume: Billions write events per day.   
- - [ ] handle large read/query volume: Millions merchants want to get insight about their business. 
-  Read/Query patterns are time-series related metrics.
- - [ ] provide metrics to customers with at most one hour delay.
- - [ ] run with minimum downtime.
+ - [ ] handle large write volume: Billions write events per day
+ - [ ] handle large read/query volume: Millions merchants want to get insight about their business 
+  Read/Query patterns are time-series related metrics
+ - [ ] provide metrics to customers with at most one hour delay
+ - [ ] run with minimum downtime
  - [ ] have the ability to reprocess historical data in case of bugs in the processing logic
  
   
@@ -41,11 +41,11 @@
         
         
 # solution 
- + use Mongo DB 
+ + use Mongo DB (refer to below Benchmark result)
 	- [http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf](http://www.datastax.com/wp-content/themes/datastax-2014-08/files/NoSQL_Benchmarks_EndPoint.pdf)
  + use GraphQL instead of REST API to maximize read speed for analytics
  + use GCP Spanner 
- 	- Guaranteed max of 5 minutes of downtime (including planned downtime) on paper and in practice..
+ 	- Guaranteed max of 5 minutes of downtime (including planned downtime) on paper and in practice.
  + use Apache lucene (instead of Elastic Search)
     - payment information is more likely to structured database. 
     -  Elasticsearch is built over Lucene and provides a JSON based REST API to refer to Lucene features.
